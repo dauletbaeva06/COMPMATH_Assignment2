@@ -9,7 +9,7 @@ A = np.array([
 b = np.array([-1, 3, 7, 11], dtype=float)
 x0 = np.array([0, 0, 0, 0], dtype=float)
 tol = 1e-3
-max_iter = 100
+max_iter = 50
 
 def jacobi_method(A, b, x_init, tol, max_iter):
     n = len(b)

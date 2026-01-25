@@ -1,13 +1,12 @@
 import numpy as np
 
 A = np.array([
-    [4, -1, -1, 0],
-    [-1, 4, 0, -1],
-    [-1, 0, 4, -1],
-    [0, -1, -1, 4]
+    [5, 15, 55],
+    [15, 55, 225],
+    [55, 225, 979]
 ], dtype=float)
-b = np.array([-1, 3, 7, 11], dtype=float)
-x0 = np.array([0, 0, 0, 0], dtype=float)
+b = np.array([55, 225, 979], dtype=float)
+x0 = np.array([0, 0, 0], dtype=float)
 
 def gauss_jordan_method(A, b):
     n = len(b)
